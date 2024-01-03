@@ -1,7 +1,9 @@
 package main
 
 import (
-	pattern "learnBasic/pattern"
+	"fmt"
+	"learnBasic/math"
+	"learnBasic/pattern"
 )
 
 func main() {
@@ -22,4 +24,9 @@ func main() {
 	pattern.Pattern20()
 	pattern.Pattern21()
 	pattern.Pattern22()
+
+	fmt.Println("learnBasic/math")
+	math.CountDigits(12346)
+	math.ReverseNumber(123)
+	math.PalindromeNumber(121)
 }
