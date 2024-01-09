@@ -1,6 +1,9 @@
 package math
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 /*
 How to extract digits from the end of a number?
@@ -26,6 +29,9 @@ func ReverseNumber(n int) int {
 		digit := n % 10
 		reverse = reverse*10 + digit
 		n = n / 10
+		if reverse > math.MaxInt32 || reverse < math.MinInt32 {
+			return 0
+		}
 	}
 
 	fmt.Printf("The reverse of the %d is %d\n", x, reverse)

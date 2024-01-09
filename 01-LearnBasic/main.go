@@ -29,4 +29,5 @@ func main() {
 	math.CountDigits(12346)
 	math.ReverseNumber(123)
 	math.PalindromeNumber(121)
+	math.ArmstrongNumber(153)
 }
