@@ -23,15 +23,15 @@ For example, to create a number from digits: [1,2,3]:
 Consider the number, num = 0.
 */
 func ReverseNumber(n int) int {
+	if n > math.MaxInt32 || n < math.MinInt32 {
+		return 0
+	}
 	reverse := 0
 	x := n
 	for n != 0 {
 		digit := n % 10
 		reverse = reverse*10 + digit
 		n = n / 10
-		if reverse > math.MaxInt32 || reverse < math.MinInt32 {
-			return 0
-		}
 	}
 
 	fmt.Printf("The reverse of the %d is %d\n", x, reverse)

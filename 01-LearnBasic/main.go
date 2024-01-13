@@ -30,4 +30,6 @@ func main() {
 	math.ReverseNumber(123)
 	math.PalindromeNumber(121)
 	math.ArmstrongNumber(153)
+	math.PrintAllDivisors(36)
+	math.IsPrimeNumber(11)
 }
